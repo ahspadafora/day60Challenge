@@ -8,11 +8,8 @@
 
 import Foundation
 
-struct Response: Codable {
-    var users: [User]
-}
 
-struct User: Codable {
+struct User: Codable, Identifiable {
     var id: String
     var name: String
     var age: Int

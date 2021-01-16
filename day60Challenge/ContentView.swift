@@ -9,10 +9,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var users = [User]()
+    
     var body: some View {
-        Text("Hello, World!").onAppear {
-            self.loadUserData()
-        }
+        List(users) { user in
+            Text(user.name)
+        }.onAppear(perform: loadUserData)
     }
     
     func loadUserData() {
@@ -29,6 +32,9 @@ struct ContentView: View {
             // handle results of dataTask
             if let data = data {
                 if let decodedUsersArray = try? JSONDecoder().decode([User].self, from: data) {
+                    DispatchQueue.main.async {
+                        self.users = decodedUsersArray
+                    }
                     print(decodedUsersArray.count)
                 } else {
                     print("decoded response is empty")

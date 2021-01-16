@@ -28,11 +28,16 @@ struct ContentView: View {
         URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
             // handle results of dataTask
             if let data = data {
-                if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
-                    print(decodedResponse.users.count)
+                if let decodedUsersArray = try? JSONDecoder().decode([User].self, from: data) {
+                    print(decodedUsersArray.count)
+                } else {
+                    print("decoded response is empty")
                 }
+            } else {
+                print("Data is not valid")
             }
-        }
+        
+        }.resume()
         
         
         

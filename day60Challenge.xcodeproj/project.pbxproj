@@ -16,6 +16,7 @@
 		BA2E95D225B2B05F00FE0087 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E95D125B2B05F00FE0087 /* User.swift */; };
 		BA2E95D425B2B1D000FE0087 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E95D325B2B1CF00FE0087 /* Friend.swift */; };
 		BA2E95D725B3A70A00FE0087 /* UserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E95D625B3A70A00FE0087 /* UserRow.swift */; };
+		BA2E95D925B3BE1500FE0087 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA2E95D825B3BE1500FE0087 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BA2E95D125B2B05F00FE0087 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BA2E95D325B2B1CF00FE0087 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		BA2E95D625B3A70A00FE0087 /* UserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRow.swift; sourceTree = "<group>"; };
+		BA2E95D825B3BE1500FE0087 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				BA2E95BA25B2B04500FE0087 /* AppDelegate.swift */,
 				BA2E95BC25B2B04500FE0087 /* SceneDelegate.swift */,
 				BA2E95C125B2B04500FE0087 /* ContentView.swift */,
+				BA2E95D825B3BE1500FE0087 /* DetailView.swift */,
 				BA2E95D625B3A70A00FE0087 /* UserRow.swift */,
 				BA2E95D125B2B05F00FE0087 /* User.swift */,
 				BA2E95D325B2B1CF00FE0087 /* Friend.swift */,
@@ -158,6 +161,7 @@
 				BA2E95BB25B2B04500FE0087 /* AppDelegate.swift in Sources */,
 				BA2E95BD25B2B04500FE0087 /* SceneDelegate.swift in Sources */,
 				BA2E95C225B2B04500FE0087 /* ContentView.swift in Sources */,
+				BA2E95D925B3BE1500FE0087 /* DetailView.swift in Sources */,
 				BA2E95D725B3A70A00FE0087 /* UserRow.swift in Sources */,
 				BA2E95D425B2B1D000FE0087 /* Friend.swift in Sources */,
 				BA2E95D225B2B05F00FE0087 /* User.swift in Sources */,

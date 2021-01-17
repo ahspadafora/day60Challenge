@@ -13,9 +13,15 @@ struct ContentView: View {
     @State private var users = [User]()
     
     var body: some View {
-        List(users) { user in
-            Text(user.name)
-        }.onAppear(perform: loadUserData)
+        NavigationView {
+            List {
+                ForEach(users) { user in
+                    NavigationLink(destination: DetailView(user: user)) {
+                        UserRow(user: user)
+                    }
+                }
+            }.onAppear(perform: loadUserData)
+        }
     }
     
     func loadUserData() {
